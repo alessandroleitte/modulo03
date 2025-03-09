@@ -6,14 +6,26 @@
     <title>Imgagens de fundo</title>
     <style>
         body{
-            background-image: url(imagens/wallpaper001.jpg);
+            background-color: rgb(217, 238, 185);
         }
+        h1{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 50px;
+            margin-bottom: 50px;
+            background-image: linear-gradient(to top, green, transparent);
+        }
+
+        h2{
+            background-image: linear-gradient(to right, yellow, transparent);
+        }
+        /* ex001*/ 
         .caixa{
             display: inline-block;
             border: 2px solid black;
             background-color: lightgrey;
-            width: 300px;
-            height: 300px;
+            width: 200px;
+            height: 200px;
         }
         .caixa#cx1{
             background-color: blueviolet;
@@ -24,11 +36,159 @@
         .caixa#cx3{
             background-image: url(imagens/pattern003.png);
         }
+
+        /* ex002*/ 
+
+        .ex002{
+            border: 2px dashed green;
+            margin-bottom: 10px;
+            height: 150px;
+        }
+        .ex002#e01{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: top left;
+        }
+        .ex002#e02{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: top right;
+        }
+        .ex002#e03{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: center left;
+        }
+        .ex002#e04{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: center;
+        }
+        .ex002#e05{
+            background-image: url(imagens/wallpaper003.jpg);
+            background-position: left bottom;
+        }
+
+        /* ex003*/
+
+        .ex003{
+            margin: auto;
+            width: 90%;
+            height: 500px;
+            border: 2px solid red;
+            border-radius: 20px;
+            background-image: url(imagens/truck.webp);
+            background-position: center right;
+            background-repeat: no-repeat;
+        }
+        .ex003:hover{
+            background-position: center;
+            transition-duration: 2s;
+        }
+
+        /* ex004*/
+
+        .ex004{
+            color: rgb(117, 20, 99);
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aqua;
+            background-image: url(imagens/foto-m.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 90%;
+            height: 800px;
+            margin: auto;
+            border: 2px solid darkblue;
+            border-radius: 5px;
+        }
+        .ex004 > aside{
+            width: 60%;
+            height: 80%;
+            margin: auto;
+            margin-top: 10px;
+            padding: 20px;
+            background-color: #f5d6db77;
+        }
+
+        /*ex005*/
+
+        .ex005{
+            width: 90%;
+            height: 2000px;
+            margin: auto;
+            border: 2px solid salmon;
+            border-radius: 10px;
+        }
+        .ex005{
+            /* shorthand background
+            background: color > image > position > repeat > [size] > attachment
+            
+            backgroun-size ainda não funciona no shorthand
+            */
+            background-color: aliceblue;
+            background: aliceblue url(imagens/foto-m.png) center no-repeat fixed;
+            background-size: cover;
+        }
+        .ex005 > aside{
+            color: rgb(117, 20, 99);
+            width: 70%;
+            height: 80%;
+            margin: auto;
+            padding: 10px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="caixa" id="cx1"></div>
-    <div class="caixa" id="cx2"></div>
-    <div class="caixa" id="cx3"></div>
+    <h1>Estudando imagens de fundo</h1>
+    <h2>Ex001</h2>
+        <div class="caixa" id="cx1"></div>
+        <div class="caixa" id="cx2"></div>
+        <div class="caixa" id="cx3"></div>
+    <h2>ex002</h2>
+        <div class="ex002" id="e01"></div>
+        <div class="ex002" id="e02"></div>
+        <div class="ex002" id="e03"></div>
+        <div class="ex002" id="e04"></div>
+        <div class="ex002" id="e05"></div>
+    <h2>ex003</h2>
+        <div class="ex003"></div>
+    <h2>ex004</h2>
+        <div class="ex004">
+            <aside>
+                <h3>Teste de cobertura de imagem de fundo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                </p>
+            </aside>
+        </div>
+        <h2>ex005</h2>
+            <div class="ex005">
+                <aside>
+                    <h3>Shorthand background-image</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ad, libero vitae, natus adipisci autem deleniti perferendis quae consequuntur ipsum accusamus aperiam voluptatem. Possimus doloribus modi, dolores adipisci itaque quia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quam laboriosam ex dolores hic! Quo quas, tempore assumenda laboriosam molestias provident, amet dicta harum velit, eligendi voluptatibus ipsum blanditiis veritatis!
+                    </p>                   
+                </aside>
+            </div>
 </body>
 </html>
