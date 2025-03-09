@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imgagens de fundo</title>
+    <style>
+        body{
+            background-image: url(imagens/wallpaper001.jpg);
+        }
+        .caixa{
+            display: inline-block;
+            border: 2px solid black;
+            background-color: lightgrey;
+            width: 300px;
+            height: 300px;
+        }
+        .caixa#cx1{
+            background-color: blueviolet;
+        }
+        .caixa#cx2{
+            background-image: linear-gradient(to bottom, blue, rgb(11, 130, 170));
+        }
+        .caixa#cx3{
+            background-image: url(imagens/pattern003.png);
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa" id="cx1"></div>
+    <div class="caixa" id="cx2"></div>
+    <div class="caixa" id="cx3"></div>
+</body>
+</html>
