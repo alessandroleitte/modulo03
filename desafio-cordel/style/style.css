@@ -8,6 +8,7 @@
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -35,6 +36,11 @@ header > p{
     color: white;
 }
 
+header > p >a:hover, footer > p > a:hover{
+    text-decoration: underline;
+    color: lightblue;
+}
+
 main > p{
     font-family: var(--fonte3);
     font-size: 3.5vw;
@@ -55,11 +61,13 @@ main > p{
     background-size: cover;
     margin-top: 5%;
     padding: 5%;
+    box-shadow: inset 6px 6px 15px rgba(0, 0, 0, 0.597);
 }
 .fundo2{
     background: lightgray url('../imagens/background002.jpg') center fixed;
     background-size: cover;
     padding: 5%;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.597);
 }
 footer{
     background-color: black;
