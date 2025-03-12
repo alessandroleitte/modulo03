@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex002 Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: greenyellow;
+            color: green;
+        }
+        body > h1{
+            text-align: center;
+        }
+        body > h2{
+            background-image: linear-gradient(to right, darkgreen, rgb(90, 139, 17),lightgreen, transparent);
+            color: lightgreen;
+        }
+        .tabela1{
+            margin: 50px auto;
+            border: 4PX double green;
+            width: 450PX;
+            height: 300PX;
+            border-collapse: collapse;
+        }
+        .tabela1 td{
+            text-align: center;
+            border: 4px solid lightgreen;
+            vertical-align: bottom;
+        }
+        .color{
+            background-color: lightgray;
+        }
+        section{
+            color: lightgreen;
+            font-weight: bolder;
+            background-color: white;
+            background-image: url(brasil.jpg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 80vw;
+            height: 600px;
+            margin: auto;
+            padding: 20% 0;
+        }
+        section table{
+            background-color: rgba(0, 0, 0, 0.553);
+            border: 2px solid greenyellow;
+            width: 70%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        table td{
+            border: 1px solid greenyellow;
+            text-align: center;
+        }
+        table th, td.total{
+            color: gr;
+            font-size: 3vw;
+        }
+        table th{
+            border: 3px double greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercicio de Tabelas</h1>
+
+    <h2>Ex 001</h2>
+    <table class="tabela1">
+        <tr class="color">
+            <td>A1</td>
+            <td>A2</td>
+            <td>A3</td>
+        </tr>
+        <tr>
+            <td>B1</td>
+            <td>B2</td>
+            <td>B3</td>
+        </tr>
+        <tr class="color">
+            <td>C1</td>
+            <td>C2</td>
+            <td>C3</td>
+        </tr>
+    </table>
+
+    <h2>Ex 002</h2>
+    <section>
+        <table>
+            <thead>
+                <th>Unidade federativa</th>
+                <th>População</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td>45 973 194</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td>21 322 691</td>
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td>17 219 679</td>
+                </tr>
+                <tr>
+                    <td>Bahia</td>
+                    <td>14 850 513</td>
+                </tr>
+                <tr>
+                    <td>Paraná</td>
+                    <td>11 824 665</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Sul</td>
+                    <td> 11 229 915</td>
+                </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td>9 539 029</td>
+                </tr>
+                <tr>
+                    <td>Ceará</td>
+                    <td>9 233 656</td>
+                </tr>
+                <tr>
+                    <td>Pará</td>
+                    <td>8 664 441</td>
+                </tr>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td>8 058 441</td>
+                </tr>
+                <tr>
+                    <td>Goiás</td>
+                    <td>7 350 483</td>
+                </tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td>7 010 960</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td>4 281 209</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td>4 145 040</td>
+                </tr>
+                <tr>
+                    <td>Espirito Santo</td>
+                    <td>4 102 129</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td> 3 836 399</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td>3 446 071</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td>3 375 646</td>
+                </tr>
+                <tr>
+                    <td>Alagoas</td>
+                    <td>3 220 104</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td>2 982 818</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso do Sul</td>
+                    <td>2 901 895</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td>2 291 077</td>
+                </tr>
+                <tr>
+                    <td>Rondônia</td>
+                    <td>1 746 227</td>
+                </tr>
+                <tr>
+                    <td>Tocantins</td>
+                    <td>1 577 342</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td>880 631</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td>802 837</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td>716 793</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <th>TOTAL</th>
+                <td class="total">212 583 750</td>
+            </tfoot>
+        </table>
+    </section>
+
+</body>
+</html>
