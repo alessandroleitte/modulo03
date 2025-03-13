@@ -9,11 +9,17 @@
             font-family: Arial, Helvetica, sans-serif;
             background-color: greenyellow;
             color: green;
+            margin: 0;
+            padding: 0;
         }
         body > h1{
+            margin-top: -1%;
             text-align: center;
+            background-color: rgb(198, 236, 141);
+            padding: 5%;
+            font-size: 5vw;
         }
-        body > h2{
+        body  h2{
             background-image: linear-gradient(to right, darkgreen, rgb(90, 139, 17),lightgreen, transparent);
             color: lightgreen;
         }
@@ -51,10 +57,19 @@
             width: 70%;
             margin: auto;
             border-collapse: collapse;
+            position: relative;
+        }
+        table th{
+            position: sticky;
+            top: 0;
+            background-color: rgb(3, 43, 3);
         }
         table td{
             border: 1px solid greenyellow;
             text-align: center;
+        }
+        table tr:nth-child(2n){
+            background-color: rgba(0, 100, 0, 0.522);
         }
         table th, td.total{
             color: gr;
@@ -62,6 +77,36 @@
         }
         table th{
             border: 3px double greenyellow;
+        }
+        .ex003 caption{
+            background-color: rgb(126, 164, 29);
+            font-size: 3.5vw;
+            font-style: oblique;
+            font-weight: bolder;
+        }
+        .ex003 table{
+            background-color: whitesmoke;
+            margin: auto;
+        }
+        .ex003 td{
+            border: 2px solid lime;
+            border-collapse: collapse;
+        }
+        .ex003 th{
+            border: 3px solid limegreen;
+        }
+
+        article{
+            width: 80vw;
+            margin: 50px auto; 
+            background-color: rgb(211, 234, 214);
+            color: rgb(1, 24, 1);
+            padding: 4px;
+            text-align: center;
+        }
+        article > p{
+            padding:  2% 4%;
+            text-align: justify;
         }
 
     </style>
@@ -211,6 +256,57 @@
             </tfoot>
         </table>
     </section>
+
+    <div class="ex003">
+        <h2>Ex 003</h2>
+
+        <table>
+            <caption>Tabela ex 003</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Joao</td>
+                    <td>20</td>
+                    <td>masculino</td>
+                </tr>
+                <tr>
+                    <td>Joice</td>
+                    <td>17</td>
+                    <td>feminino</td>
+                </tr>
+                <tr>
+                    <td>Artur</td>
+                    <td>19</td>
+                    <td>Masculino</td>
+                </tr>
+                <tr>
+                    <td>Matilda</td>
+                    <td>27</td>
+                    <td>Feminino</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th>Total de Pessoas</th>
+                    <td colspan="2">4</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <article>
+        <h3>Lorem Ipsum</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dolores ducimus voluptate doloribus nostrum, fugit, et, iusto ipsam impedit neque aspernatur quia perspiciatis debitis ipsum voluptatem nihil aut rerum vero?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dolores ducimus voluptate doloribus nostrum, fugit, et, iusto ipsam impedit neque aspernatur quia perspiciatis debitis ipsum voluptatem nihil aut rerum vero?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dolores ducimus voluptate doloribus nostrum, fugit, et, iusto ipsam impedit neque aspernatur quia perspiciatis debitis ipsum voluptatem nihil aut rerum vero?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dolores ducimus voluptate doloribus nostrum, fugit, et, iusto ipsam impedit neque aspernatur quia perspiciatis debitis ipsum voluptatem nihil aut rerum vero?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dolores ducimus voluptate doloribus nostrum, fugit, et, iusto ipsam impedit neque aspernatur quia perspiciatis debitis ipsum voluptatem nihil aut rerum vero?</p>
+    </article>
 
 </body>
 </html>
