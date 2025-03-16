@@ -108,7 +108,12 @@
             padding:  2% 4%;
             text-align: justify;
         }
-
+        col.cSexo, col.cIdade{
+            background-color: yellowgreen;
+        }
+        .ex004{
+            overflow-x: auto;
+        }
     </style>
 </head>
 <body>
@@ -307,6 +312,163 @@
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dolores ducimus voluptate doloribus nostrum, fugit, et, iusto ipsam impedit neque aspernatur quia perspiciatis debitis ipsum voluptatem nihil aut rerum vero?</p>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam dolores ducimus voluptate doloribus nostrum, fugit, et, iusto ipsam impedit neque aspernatur quia perspiciatis debitis ipsum voluptatem nihil aut rerum vero?</p>
     </article>
-
+    <section class="ex004"> 
+        <h2>ex004 Editando colunas</h2>
+        <table>
+            <colgroup>
+                <col class="cNome">
+                <col class="cSexo">
+                <col class="cIdade">
+                <col class="cProfissao">
+            </colgroup>
+            <caption>Funcionários</caption>
+            <thead>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Claudio</td>
+                    <td>M</td>
+                    <td>28</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>Gustavo</td>
+                    <td>M</td>
+                    <td>42</td>
+                    <td>Professor</td>
+                </tr>
+                <tr>
+                    <td>Hélio</td>
+                    <td>M</td>
+                    <td>19</td>
+                    <td>Vendedor</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>F</td>
+                    <td>39</td>
+                    <td>Médica</td>
+                </tr>
+                <td>Otávio</td>
+                    <td>M</td>
+                    <td>22</td>
+                    <td>Nutricionista</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>ex005</h2>
+        <div class="ex004">
+            <table>
+                <caption>Tabela resposiva</caption>
+                <thead>
+                    <tr>
+                        <td colspan="12">Vendas por funcionário</td>
+                    </tr>
+                    <tr>
+                        <th>Funcionário</th>
+                        <th>Janeiro</th>
+                        <th>Fevereiro</th>
+                        <th>Março</th>
+                        <th>Abril</th>
+                        <th>Maio</th>
+                        <th>Junho</th>
+                        <th>Julho</th>
+                        <th>Agosto</th>
+                        <th>Setembro</th>
+                        <th>Outubro</th>
+                        <th>Novembro</th>
+                        <th>Dezembro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Lucas</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>2</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>1</td>
+                    <td>2</td>
+                    </tr>
+                    <tr>
+                    <td>Marcelo</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>3</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>1</td>
+                    </tr>
+                    <tr>
+                    <td>Joao</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>2</td>
+                    </tr>
+                    <tr>
+                    <td>Henrique</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>8</td>
+                    <td>4</td>
+                    <td>1</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>3</td>
+                    </tr>
+                    <tr>
+                    <td>Pedro</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>2</td>
+                    <td>9</td>
+                    <td>6</td>
+                    <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
 </body>
 </html>
